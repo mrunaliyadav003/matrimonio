@@ -1,0 +1,64 @@
+*{
+    background-color: #eaddca;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #800020;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe Script', sans-serif;
+    
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #800020;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.heading{ animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.heading h1{
+    color: #800020;
+    font-family:'Bradley Hand ITC' ,sans-serif;
+    font-size: 80px;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+   
+}
+
+.heading p{
+    color: #6f4e37;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+
+}
